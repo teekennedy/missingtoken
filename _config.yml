@@ -1,11 +1,11 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Missing Token
+email:       terrancerkennedy@gmail.com
+author:      Terrance Kennedy
+description: "A mostly software blog."
 baseurl:     ""
-url:         "http://pixyll.com"
 date_format: "%b %-d, %Y"
+url:         "https://missingtoken.net"
 
 # Google services
 google_verification:
