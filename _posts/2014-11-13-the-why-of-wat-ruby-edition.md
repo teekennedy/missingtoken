@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "The Why of \"Wat\" [Ruby edition]"
-author: Terrance Kennedy
 date: 2014-11-13 23:48:23 -0700
-comments: true
-categories: [Ruby]
+categories: Ruby
 ---
 
 In his wonderfully sarcastic lightning talk, Wat, Gary Bernhardt explores the
