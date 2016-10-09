@@ -186,6 +186,16 @@ And lastly - if you happen to write in language other than English be sure to ch
 
 I hope you enjoy using Pixyll. If you encounter any issues, please feel free to let me know by creating an [issue](https://github.com/johnotander/pixyll/issues). I'd love to help.
 
+## Deployment to S3
+
+If you want to deploy this site to AWS S3, use [`s3_website`](https://github.com/laurilehmijoki/s3_website). Follow the instructions for installation and configuration, then deploy with:
+
+```
+s3_website push
+```
+
+You can use the `--force` option to force update assets, which is necessary when modifying HTTP headers like `cache_control`.
+
 ## Upgrading Pixyll
 
 Pixyll is always being improved by its users, so sometimes one may need to upgrade.

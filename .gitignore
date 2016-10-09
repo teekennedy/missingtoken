@@ -3,7 +3,10 @@ _site
 .DS_Store
 .jekyll-metadata
 
+Gemfile.lock
+
 # Ignore the config file that's used for gh-pages.
 _config.gh-pages.yml
 
-Gemfile.lock
+# Ignore the config file that's used for s3_website
+s3_website.yml
