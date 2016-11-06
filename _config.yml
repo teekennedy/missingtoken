@@ -42,20 +42,19 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-angellist_username:
-bitbucket_username:
-bitcoin_url:
-flattr_button:
 github_username: Cyphus
+bitbucket_username:
+stackoverflow_id:
+twitter_username: Cyphus
+skype_username:
+steam_nickname: cyphus573
 google_plus_id:
 linkedin_username:
+angellist_username:
 medium_id:
+bitcoin_url:
 paypal_url:
-skype_username:
-stackoverflow_id:
-steam_nickname: cyphus573
-twitter_username:
-twitter_username: Cyphus
+flattr_button:
 
 # Post sharing icons
 show_sharing_icons: false
