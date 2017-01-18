@@ -10,3 +10,6 @@ _config.gh-pages.yml
 
 # Ignore the config file that's used for s3_website
 s3_website.yml
+
+# Ignore the virutalenv dir used for AWS python tools
+_env27/

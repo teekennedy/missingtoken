@@ -196,6 +196,17 @@ s3_website push
 
 You can use the `--force` option to force update assets, which is necessary when modifying HTTP headers like `cache_control`.
 
+## Using Let's Encrypt for certificate management on AWS
+
+### Setup
+
+* Run `./scripts/install_aws_tools.sh` from the project root directory to install AWS tools.
+* Make sure you have an `s3_website.yml` created and configured from the (#deployment-to-s3) section.
+
+### Creating or updating the certificate
+
+Run `./scripts/s3_le_cert.py` as root. It will load the configuration and secrets from `s3_website.yml` and pass them through to certbot.
+
 ## Upgrading Pixyll
 
 Pixyll is always being improved by its users, so sometimes one may need to upgrade.
