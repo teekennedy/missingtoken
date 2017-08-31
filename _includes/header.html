@@ -2,6 +2,12 @@
   <div class="mt2 wrap">
     <div class="measure">
       <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+      {% if site.enable_header_pages %}
+      <nav class="site-nav">
+        {%include navigation.html %}
+      </nav>
+      <div class="clearfix"></div>
+      {% endif %}
       {% if site.show_social_icons %}
         {% include social_links.html %}
       {% endif %}
