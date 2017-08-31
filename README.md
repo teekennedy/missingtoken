@@ -29,16 +29,6 @@ $ bundle exec jekyll serve --watch
 
 Now you can navigate to `localhost:4000` in your browser to see the site.
 
-```html
-<script>
-    anchors.options.visible = 'always';
-    anchors.add('article h2, article h3, article h4, article h5, article h6');
-</script>
-```
-
-See [documentation](http://bryanbraun.github.io/anchorjs/#basic-usage) for more
-options.
-
 ## Deployment to S3
 
 If you want to deploy this site to AWS S3, install
