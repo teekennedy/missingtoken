@@ -3,8 +3,6 @@ _site
 .DS_Store
 .jekyll-metadata
 
-Gemfile.lock
-
 # Ignore the config file that's used for gh-pages.
 _config.gh-pages.yml
 
@@ -13,3 +11,6 @@ s3_website.yml
 
 # Ignore the virutalenv dir used for AWS python tools
 _env27/
+
+# Ignore the local bundle installation dir
+.bundle/
