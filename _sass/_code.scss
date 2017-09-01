@@ -21,6 +21,10 @@ pre {
   background-color: $pre-background-color;
 }
 
+.highlight pre {
+  background-color: transparent;
+}
+
 .highlight .p {
   font-size: 1.125rem;
   line-height: 1;
