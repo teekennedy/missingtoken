@@ -35,7 +35,6 @@ If you want to deploy this site to AWS S3, install
 [`s3_website`](https://github.com/laurilehmijoki/s3_website). Follow the
 instructions for installation and configuration, then deploy with:
 
-<<<<<<< HEAD
 ```
 s3_website push
 ```
