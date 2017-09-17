@@ -56,6 +56,10 @@ $darken-4: rgba(#000,.5) !default;
 $link-color: $blue;
 $link-hover-color: darken($blue, 40%);
 
+// Text
+$default-text-color: #49483e;
+$default-background-color: #e2e2df;
+
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
 $breakpoint-xl: '(min-width: 96em)';
@@ -92,7 +96,9 @@ $form-field-padding-y: .5rem;
 $form-field-padding-x: .5rem;
 
 // Code
-$pre-border-radius: 0;
+$code-default-text-color: #f8f8f2;
+$code-default-background-color: #272822;
+$pre-border-radius: .25em;
 $pre-background-color: #fafafa;
 $hljs-comment: $mid-gray;
 $hljs-keyword: $dark-blue;

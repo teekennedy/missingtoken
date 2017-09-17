@@ -1,7 +1,7 @@
 pre,
 pre code {
   background-color: transparent;
-  border-radius: $pre-border-radius;
+  border: none;
 }
 
 pre,
@@ -10,7 +10,10 @@ code {
 }
 
 code {
-  color: #7a7a7a;
+  color: $default-text-color;
+  background-color: $default-background-color;
+  border: dashed 1px $code-default-background-color;
+  border-radius: $pre-border-radius;
 }
 
 pre {
@@ -19,6 +22,10 @@ pre {
   overflow-x: scroll;
   margin-bottom: 0.88em;
   background-color: $pre-background-color;
+}
+
+.highlight {
+    border-radius: $pre-border-radius;
 }
 
 .highlight pre {

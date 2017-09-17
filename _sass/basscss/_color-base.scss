@@ -1,8 +1,10 @@
 /* Basscss Color Base */
 
 body {
-  color: $dark-gray;
-  background-color: white;
+  color: $default-text-color;
+  background-color: $default-background-color;
+  // courtesy of https://www.transparenttextures.com/
+  background-image: url(/images/cream-paper.png);
 }
 
 a {
