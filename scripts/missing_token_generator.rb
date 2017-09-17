@@ -61,6 +61,8 @@ space_len = dash_len * args.spacing
 # Offset so that a dash is centered on a side. If args.dashes is evenly
 # divisible by 4, there will be a dash centered on each side.
 dash_offset = ((args.width - args.radius * 2) / 2) - (dash_len / 2)
+#dash_offset = 0
+
 #for whatever reason, even though stroke moves clockwise, stroke-dashoffset
 #will make the stroke start from a more counter-clockwise position!
 svg_dash_offset = -1 * dash_offset
@@ -73,7 +75,7 @@ svg_template = %{
     <div style="background-color:#49483e">
       <svg width="200" height="200">
         <rect x="10" y="10" rx="#{args.radius}" ry="#{args.radius}" width="#{args.width}" height="#{args.width}"
-          style="fill:none;stroke:#a6e22e;stroke-width:10;stroke-dashoffset:#{svg_dash_offset};stroke-dasharray:#{dash_len},#{space_len}" />
+          style="fill:none;stroke:#a6e22e;stroke-width:6;stroke-dashoffset:#{svg_dash_offset};stroke-dasharray:#{dash_len},#{space_len}" />
       </svg>
     </div>
   </body>

@@ -57,7 +57,10 @@ $link-color: $blue;
 $link-hover-color: darken($blue, 40%);
 
 // Text
-$default-text-color: #49483e;
+// The default text and background color are designed to be > 7 contrast ratio
+$default-text-color: #424138;
+// the background image combined with the color produces a slightly darker
+// background, measured to average #d7d7d5.
 $default-background-color: #e2e2df;
 
 // Breakpoints
@@ -99,7 +102,7 @@ $form-field-padding-x: .5rem;
 $code-default-text-color: #f8f8f2;
 $code-default-background-color: #272822;
 $pre-border-radius: .25em;
-$pre-background-color: #fafafa;
+$pre-background-color: #cbcbc8;
 $hljs-comment: $mid-gray;
 $hljs-keyword: $dark-blue;
 $hljs-name: $dark-gray;

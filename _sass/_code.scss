@@ -1,34 +1,35 @@
+// style for inline code
+code {
+  padding: 0.05em;
+  border: dashed 1px $code-default-background-color;
+  border-radius: $pre-border-radius;
+}
+
+// reset the above styles for code blocks
 pre,
 pre code {
-  background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 pre,
 code {
   font-family: $monospace-font-family;
-}
-
-code {
-  color: $default-text-color;
-  background-color: $default-background-color;
-  border: dashed 1px $code-default-background-color;
-  border-radius: $pre-border-radius;
+  background-color: transparent;
 }
 
 pre {
-  padding: 1.125em;
   line-height: 1.11;
   overflow-x: scroll;
   margin-bottom: 0.88em;
-  background-color: $pre-background-color;
 }
 
 .highlight {
-    border-radius: $pre-border-radius;
+    border-radius: $pre-border-radius
 }
 
 .highlight pre {
+  padding: .5em .75em;
   background-color: transparent;
 }
 
