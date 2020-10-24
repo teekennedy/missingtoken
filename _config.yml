@@ -15,7 +15,7 @@ header_pages:
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics: UA-62186128-1
+google_analytics:
 google_tag_manager:
 # Bing services
 bing_verification:
@@ -40,7 +40,7 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: missingtoken
+disqus_shortname:
 
 # txtpen post comments
 # (leave blank to disable txtpen)
@@ -102,8 +102,6 @@ text:
     updated:        'Updated'
     minute_read:    'minute read'
     related_posts:  'Related Posts'
-  index:
-    coming_soon: 'Coming soon...'
   contact:
     email:    'Email Address'
     content:  'What would you like to say?'
@@ -124,9 +122,6 @@ permalink:    pretty
 paginate:     4
 sass:
   style: compressed
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
