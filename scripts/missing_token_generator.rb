@@ -4,11 +4,8 @@
 require 'optparse'
 require 'ostruct'
 
-# Golden parameters: (so far)
-# width: 150
-# radius: 35
-# spacing: 0.4
-# dashes: 16
+# Golden arguments: (so far)
+# --width 150 --radius 35 --spacing 0.5 --dashes 8
 
 class ArgParse
   def self.parse(args)
@@ -29,6 +26,9 @@ class ArgParse
       end
       opts.on("-w","--width WIDTH", Float, "Width of square.") do |w|
         options.width = w
+      end
+      opts.on('-o', '--output FILENAME', 'Output filename.') do |f|
+        options.output = f
       end
       opts.on("-h","--help","Print this help.") do
         puts opts
@@ -70,16 +70,17 @@ svg_dash_offset = -1 * dash_offset
 svg_template = %{
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Missingtoken icon</h1>
-    <div style="background-color:#49483e">
-      <svg width="200" height="200">
-        <rect x="10" y="10" rx="#{args.radius}" ry="#{args.radius}" width="#{args.width}" height="#{args.width}"
-          style="fill:none;stroke:#a6e22e;stroke-width:6;stroke-dashoffset:#{svg_dash_offset};stroke-dasharray:#{dash_len},#{space_len}" />
-      </svg>
-    </div>
+  <body style="background-color:#49483e">
+    <svg width="200" height="200">
+      <rect x="10" y="10" rx="#{args.radius}" ry="#{args.radius}" width="#{args.width}" height="#{args.width}"
+        style="fill:none;stroke:#a6e22e;stroke-width:16;stroke-dashoffset:#{svg_dash_offset};stroke-dasharray:#{dash_len},#{space_len}" />
+    </svg>
   </body>
 </html>
 }
 
-puts svg_template
+if args.output then
+  File.write(args.output, svg_template)
+else
+  puts svg_template
+end
