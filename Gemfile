@@ -5,6 +5,6 @@ group :jekyll_plugins do
   gem 'octopress-asset-pipeline'
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
-  gem 's3_website'
   gem 'sass'
+  gem 'jekyll-favicon', '~> 0.2.8'
 end

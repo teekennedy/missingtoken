@@ -1,13 +1,13 @@
 # Missingtoken.net
 
-The source for my Jekyll based, statically generated blog. Theme is based off
-of [pixyll.com](http://www.pixyll.com).
+The source for my Jekyll based, statically generated blog. Theme is based off of
+[pixyll.com](http://www.pixyll.com).
 
 ## Getting started
 
 ### Installation
 
-I highly recommend installing the required gems for this in a local bundle.
+Install the required gems for this in a local bundle.
 
 - Start by installing and initializing [rbenv](https://github.com/rbenv/rbenv).
 - Check that you're running the version defined in this repository by running
@@ -20,7 +20,7 @@ I highly recommend installing the required gems for this in a local bundle.
 
 ### Serving locally
 
-Then, start the Jekyll Server. I always like to give the `--watch` option so it
+Then, start the Jekyll Server. I like to pass the `--watch` option so it
 updates the generated HTML when I make changes.
 
 ```
@@ -31,13 +31,4 @@ Now you can navigate to `localhost:4000` in your browser to see the site.
 
 ## Deployment to S3
 
-If you want to deploy this site to AWS S3, install
-[`s3_website`](https://github.com/laurilehmijoki/s3_website). Follow the
-instructions for installation and configuration, then deploy with:
-
-```
-s3_website push
-```
-
-You can use the `--force` option to force update assets, which is necessary
-when modifying HTTP headers like `cache_control`.
+TODO s3_website is broken, find an alternative.

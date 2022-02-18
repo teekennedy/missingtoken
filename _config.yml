@@ -53,7 +53,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: Cyphus
+github_username: teekennedy
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
@@ -122,6 +122,14 @@ permalink:    pretty
 paginate:     4
 sass:
   style: compressed
+
+# jekyll plugins. When adding plugins, add the gem to the Gemfile as well and
+# re-run bundle exec install
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
