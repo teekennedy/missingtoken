@@ -6,5 +6,5 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
   gem 'sass'
-  gem 'jekyll-favicon', '~> 0.2.8'
+  gem 'jekyll-favicon', '~> 1.0.0'
 end
