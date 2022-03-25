@@ -20,7 +20,7 @@ module "site-main" {
 
   region              = var.aws.region
   domain              = var.root_domain
-  bucket_name         = "site-missingtoken-net-us-west-2"
+  bucket_name         = var.bucket_name
   acm-certificate-arn = var.acm_certificate_arn
   # Value that will be used in a custom header for a CloudFront distribution to gain access to the
   # origin S3 bucket. Prevents web crawlers from indexing both the CloudFront distibution and the
@@ -65,4 +65,8 @@ module "dns-cname" {
   domain          = join(".", [each.value, var.root_domain])
   target          = var.root_domain
   route53_zone_id = var.route53_zone_id
+}
+
+output "origin_bucket_name" {
+  value = var.bucket_name
 }

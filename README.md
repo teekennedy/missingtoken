@@ -60,13 +60,7 @@ terraform apply
 ```
 
 With the resources all setup, all that's left to do is build the site and copy the static files to
-the origin s3 bucket:
-
-```bash
-# from repository root
-bundle exec jekyll build
-aws s3 sync --delete _site/ s3://<bucket_name variable from terraform>/
-```
+the origin s3 bucket. Run the `terraform/deploy.sh` script to build the site and sync it to S3.
 
 [jekyll-favicon]: https://github.com/afaundez/jekyll-favicon
 [terraform-website-s3-cloudfront-route53]: https://github.com/teekennedy/terraform-website-s3-cloudfront-route53
