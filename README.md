@@ -32,7 +32,7 @@ $ bundle exec jekyll serve --watch
 
 Now you can navigate to `localhost:4000` in your browser to see the site.
 
-## Deployment to S3
+## Deploying to S3
 
 This repo uses [terraform-website-s3-cloudfront-route53] to deploy this static website to S3.
 
@@ -59,8 +59,10 @@ terraform init
 terraform apply
 ```
 
+### Publishing the site
+
 With the resources all setup, all that's left to do is build the site and copy the static files to
-the origin s3 bucket. Run the `terraform/deploy.sh` script to build the site and sync it to S3.
+the origin s3 bucket. Run the `scripts/publish.sh` script to build the site and sync it to S3.
 
 [jekyll-favicon]: https://github.com/afaundez/jekyll-favicon
 [terraform-website-s3-cloudfront-route53]: https://github.com/teekennedy/terraform-website-s3-cloudfront-route53
