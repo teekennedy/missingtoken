@@ -137,6 +137,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - terraform
   - LICENSE.txt
   - README.md
   - Rakefile

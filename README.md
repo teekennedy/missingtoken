@@ -34,6 +34,39 @@ Now you can navigate to `localhost:4000` in your browser to see the site.
 
 ## Deployment to S3
 
-TODO s3_website is broken, find an alternative.
+This repo uses [terraform-website-s3-cloudfront-route53] to deploy this static website to S3.
+
+To setup, create a file with the extension `.auto.tfvars` in the `terraform` subdirectory and fill
+out values for these variables:
+
+```terraform
+aws = {
+  region = "us-west-2"
+}
+acm_certificate_arn              = <ARN of ACM certificate. Must be created in us-east-1 region!>
+route53_zone_id                  = <ID of Route53 zone for the root domain>
+root_domain                      = <Root domain name that the site will be served from>
+redirect_subdomains              = ["www"]
+duplicate_content_penalty_secret = <Some string to use as a shared secret between CloudFront and S3>
+```
+
+With the variables setup, change to the `terraform` subdirectory run through the usual terraform
+init and apply steps:
+
+```bash
+cd terraform
+terraform init
+terraform apply
+```
+
+With the resources all setup, all that's left to do is build the site and copy the static files to
+the origin s3 bucket:
+
+```bash
+# from repository root
+bundle exec jekyll build
+aws s3 sync --delete _site/ s3://<bucket_name variable from terraform>/
+```
 
 [jekyll-favicon]: https://github.com/afaundez/jekyll-favicon
+[terraform-website-s3-cloudfront-route53]: https://github.com/teekennedy/terraform-website-s3-cloudfront-route53
