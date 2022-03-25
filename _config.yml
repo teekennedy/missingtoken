@@ -2,7 +2,7 @@
 title:       Missing Token
 email:       terrance@missingtoken.net
 author:      Terrance Kennedy
-description: "A mostly software blog."
+description: "programming errata"
 baseurl:     ""
 date_format: "%b %-d, %Y"
 url:         "https://missingtoken.net"
@@ -29,7 +29,6 @@ ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
 enable_anchorjs: true
-enable_anchorjs: false
 # Preview image for social media aka og:image and twitter:image
 post_preview_image: true
 
@@ -57,7 +56,7 @@ github_username: teekennedy
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
-twitter_username: Cyphus
+twitter_username:
 skype_username:
 steam_nickname: cyphus573
 google_plus_id:
@@ -135,8 +134,11 @@ gems:
   - jekyll-favicon
 
 
-# https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
   - Gemfile.lock
+  - LICENSE.txt
+  - README.md
+  - Rakefile
+  # https://github.com/jekyll/jekyll/issues/2938
   - vendor
