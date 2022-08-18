@@ -27,6 +27,10 @@ $ bundle exec jekyll serve --watch
 
 Now you can navigate to `localhost:4000` in your browser to see the site.
 
+### Debugging
+
+Export the environment `JEKYLL_LOG_LEVEL=debug` before running `jekyll build` or `jekyll serve`.
+
 ### Adding posts
 
 Start by creating a draft. Drafts show on the local Jekyll server but are not published:
