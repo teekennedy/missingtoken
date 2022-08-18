@@ -2,7 +2,7 @@
 layout: post
 title: "MacOS path_helper not so helpful"
 date: 2018-05-14 23:48:23 -0700
-categories: bash, zsh, debugging
+tags: [bash, zsh, debugging]
 ---
 
 Do you use shell-based version managers like [nvm], [pyenv], or [rbenv], in combination with

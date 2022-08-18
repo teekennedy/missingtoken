@@ -2,7 +2,7 @@
 layout: post
 title: "The Why of \"Wat\" [Ruby edition]"
 date: 2014-11-13 23:48:23 -0700
-categories: Ruby
+tags: [ruby]
 ---
 
 In his wonderfully sarcastic lightning talk, Wat, Gary Bernhardt explores the
