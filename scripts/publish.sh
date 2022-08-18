@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+set -x
 # Get directory this script lives in
 script_dir=$(dirname ${BASH_SOURCE[0]:-${(%):-%x}})
 # Get repository root
-repo_root=$(cd "$script_dir" && git rev-parse --show-toplevel)
+cd "$script_dir"
+repo_root=$(git rev-parse --show-toplevel)
 # Set terraform directory relative to repo_root
 terraform_dir="$repo_root/terraform"
 
