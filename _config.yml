@@ -116,6 +116,12 @@ text:
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
   og_locale: 'en_US'
 
+
+# Jekyll-compose plugin settings
+jekyll_compose:
+  # Automatically open new drafts / posts / pages on create
+  auto_open: true
+
 # Build settings
 markdown:     kramdown
 redcarpet:
@@ -125,12 +131,12 @@ paginate:     4
 sass:
   style: compressed
 
-# jekyll plugins. When adding plugins, add the gem to the Gemfile as well and
-# re-run bundle exec install
+# jekyll plugins. When adding plugins, add the gem to the Gemfile as well and run 'bundle install'
 gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-favicon
+  - jekyll-compose
 
 
 exclude:

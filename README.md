@@ -32,6 +32,18 @@ $ bundle exec jekyll serve --watch
 
 Now you can navigate to `localhost:4000` in your browser to see the site.
 
+### Adding posts
+
+Start by creating a draft. Drafts show on the local Jekyll server but are not published:
+
+`bundle exec jekyll draft "My New Post"`
+
+If you need to rename it:
+
+`bundle exec jekyll rename _drafts/my-new-post.md "My Renamed Post"`
+
+When ready to publish:
+
 ## Deploying to S3
 
 This repo uses [terraform-website-s3-cloudfront-route53] to deploy this static website to S3.
