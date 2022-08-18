@@ -68,10 +68,6 @@ flattr_button:
 telegram_username:
 vk_id:
 
-# Favicons
-favicon:
-  background: '#49483e'
-
 # Post sharing icons
 show_sharing_icons: false
 # Change to 'true' to enable individual icons
@@ -135,7 +131,6 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-favicon
   - jekyll-compose
 
 

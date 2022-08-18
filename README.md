@@ -15,11 +15,6 @@ Install the required gems for this in a local bundle.
 - Run `bundle config .bundle/gems` to configure bundle to install gems locally for each repository.
   This is similar to virtualenv from python, although less explicit.
 - Run `bundle install` to install all dependencies for generating this site.
-- Install ImageMagick to generate the site's favicons through [jekyll-favicon]. The [./favicon.svg]
-  in this repo was generated specifically for ImageMagick's SVG processor. If you use any other
-  software to view or generate the favicon it will look incorrect.
-    - Make sure you __don't__ have Inkscape installed. It will be used instead of ImageMagick's
-      built-in svg processor and will slow down jekyll build to ~10 seconds per page!
 
 ### Serving locally
 
@@ -76,5 +71,4 @@ terraform apply
 With the resources all setup, all that's left to do is build the site and copy the static files to
 the origin s3 bucket. Run the `scripts/publish.sh` script to build the site and sync it to S3.
 
-[jekyll-favicon]: https://github.com/afaundez/jekyll-favicon
 [terraform-website-s3-cloudfront-route53]: https://github.com/teekennedy/terraform-website-s3-cloudfront-route53

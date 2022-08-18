@@ -77,8 +77,13 @@
     {% endif %}
 
     <!-- Icons -->
-    {% favicon %}
-
+    <link href="/favicon.ico" rel="shortcut icon" sizes="36x36 24x24 16x16" type="image/x-icon">
+    <link color="#49483e" href="/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/favicon.png" rel="icon" sizes="196x196" type="image/png">
+    <meta content="/mstile-icon-128x128.png" name="msapplication-TileImage">
+    <meta content="#49483e" name="msapplication-TileColor">
+    <link href="/manifest.webmanifest" rel="manifest">
+    <meta content="/browserconfig.xml" name="msapplication-config">
 
     {% if site.google_analytics %}
     <script type="text/javascript">
