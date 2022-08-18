@@ -133,6 +133,8 @@ gems:
   - jekyll-sitemap
   - jekyll-compose
 
+include:
+  - .well-known
 
 exclude:
   - Gemfile

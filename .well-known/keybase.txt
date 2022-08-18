@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/tkennedy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://missingtoken.net
+  * I am tkennedy (https://keybase.io/tkennedy) on keybase.
+  * I have a public key ASAKau2EdfiZKJyLBoPshOPN4dv-gGU-BR5l-MmgB_LbuAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200a6aed8475f899289c8b0683ec84e3cde1dbfe80653e051e65f8c9a007f2dbb80a",
+      "host": "keybase.io",
+      "kid": "01200a6aed8475f899289c8b0683ec84e3cde1dbfe80653e051e65f8c9a007f2dbb80a",
+      "uid": "481f8f35c576b802fa195288bedbef19",
+      "username": "tkennedy"
+    },
+    "merkle_root": {
+      "ctime": 1660863746,
+      "hash": "ed4e63778cd128b60fa24256b1fd95cda53dbbdd1a36f1792dbd8713962fc657d5ca14264207150e82de34338f8c4a663b63e0454260a002ba57f6231dd54fce",
+      "hash_meta": "506aebf6805c4b7e04756c566702009a5174398d0c700f3cf025004c66b29f36",
+      "seqno": 23048721
+    },
+    "service": {
+      "entropy": "3Bz6EIwoxdBUaybxDEQchLiX",
+      "hostname": "missingtoken.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1660863761,
+  "expire_in": 504576000,
+  "prev": "8bbc27b846a705440445c275f3bfad1f69ae0e125715017408f8e81d7c0c1495",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCmrthHX4mSiciwaD7ITjzeHb/oBlPgUeZfjJoAfy27gKp3BheWxvYWTESpcCCsQgi7wnuEanBUQERcJ187+tH2muDhJXFQF0CPjoHXwMFJXEIF/wnwb4sp/ZkdITgdHoYCubdb5V9QQAA4jlYqxarnVvAgHCo3NpZ8RATw1wwv//bW+KjpwcQYLJv2TSvRh247ZEAyyOjtGlClsitFo4VBPE0dh/jvSBUDxy997HdOQQoKTzUt6sUEthBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBTAlz/eWK2ZPQtBXhqkEmAToDje2r3tlPEWe45ZuNF2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tkennedy
+
+==================================================================
